@@ -40,7 +40,7 @@ document.write("<TR><th colspan='7' bgcolor='#C8E3FF'>");
 var dayNames = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
 var monthNames = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 var now = new Date();
-document.writeln("<FONT STYLE='font-size:9pt;Color:#330099'>" + "A.D." + now.getYear() + "Year" + monthNames[now.getMonth()] + "Month" + now.getDate() + "Day" + dayNames[now.getDay()] + "</FONT>");
+document.writeln("<FONT STYLE='font-size:9pt;Color:#330099'>" + "A.D." + now.getYear() + "/" + monthNames[now.getMonth()] + "/" + now.getDate() + " " + dayNames[now.getDay()] + "</FONT>");
 document.writeln("</TH></TR><TR><TH BGCOLOR='#0080FF'><FONT STYLE='font-size:9pt;Color:White'>Sun</FONT></TH>");
 document.writeln("<th bgcolor='#0080FF'><FONT STYLE='font-size:9pt;Color:White'>Mon</FONT></TH>");
 document.writeln("<TH BGCOLOR='#0080FF'><FONT STYLE='font-size:9pt;Color:White'>Tue</FONT></TH>");
