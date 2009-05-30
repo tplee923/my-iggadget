@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="Thermometer? No! It's a Clock!" />
+<ModulePrefs title="Thermometer? No! It's a Clock!" height="120"/>
 <Content type="html"><![CDATA[
 <SCRIPT language=javascript>
 var cellwidth=10;                 // EACH "CELL" WIDTH IN PIXELS
