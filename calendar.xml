@@ -19,7 +19,7 @@ this[9] = m9;
 this[10] = m10;
 this[11] = m11;
 }
-//实现月历
+
 function calendar() {
 var monthNames = "JanFebMarAprMayJunJulAugSepOctNovDec";
 var today = new Date();
@@ -85,7 +85,6 @@ if(timerRunning)
 clearTimeout(timerID);
 timerRunning = false;}
 
-//显示当前时间
 function showtime () {
 var now = new Date();
 var hours = now.getHours();
@@ -96,7 +95,7 @@ timeValue += ((minutes < 10) ? ":0" : ":") + minutes
 timeValue += ((seconds < 10) ? ":0" : ":") + seconds
 timeValue += (hours >= 12) ? " 下午 " : " 上午 "
 document.clock.face.value = timeValue;
-timerID = setTimeout("showtime()",1000);//设置超时,使时间动态显示
+timerID = setTimeout("showtime()",1000);
 timerRunning = true;}
 
 function startclock () {
