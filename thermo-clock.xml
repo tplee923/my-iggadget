@@ -17,19 +17,19 @@ var NS6 = (parseFloat(navigator.appVersion) >= 5 && navigator.appName.indexOf("N
 var binclk, now;
 var t='<table cellspacing="1" cellpadding="0" border="0"><tr><td align="center"> </td>';
 for(i=0;i<=58;i+=2)t+='<td align="left" colspan="2"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'">'+i+'<br> |</font></td>';
-t+='<td> </td></tr><tr><td align="center"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'"> ±: </font></td>';
+t+='<td> </td></tr><tr><td align="center"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'">Hour: </font></td>';
 for(i=0;i<=23;i++){
 t+='<td>';
 t+=(NS4)? '<ilayer name="hrs'+i+'" height="'+cellheight+'" width="'+cellwidth+'" bgcolor="'+offcolor+'"></ilayer>' : '<div id="hrs'+i+'" style="position:relative; width:'+cellwidth+'px; font-size:1px; height:'+cellheight+'px; background-color:'+offcolor+'"></div>';
 t+='</td>';
 }
-t+='<td colspan="36"><td> </td></tr><tr><td align="center"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'">∑÷: </font></td>';
+t+='<td colspan="36"><td> </td></tr><tr><td align="center"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'">Min.: </font></td>';
 for(i=0;i<=59;i++){
 t+='<td>';
 t+=(NS4)? '<ilayer name="min'+i+'" width="'+cellwidth+'" height="'+cellheight+'" bgcolor="'+offcolor+'"></ilayer>' : '<div id="min'+i+'" style="position:relative; width:'+cellwidth+'px; font-size:1px; height:'+cellheight+'px; background-color:'+offcolor+'"></div>';
 t+='</td>';
 }
-t+='<td> </td></tr><tr><td align="center"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'">√Î: </font></td>';
+t+='<td> </td></tr><tr><td align="center"><font style="font-size:'+fontsize+'px; font-weight:'+fontstyle+'; color: '+fontcolor+'">Sec.: </font></td>';
 for(i=0;i<=59;i++)
 {
 t+='<td>';
