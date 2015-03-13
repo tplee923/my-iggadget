@@ -1,0 +1,1 @@
+Within the grid, the calender is showed and at the bottom of the grid the current system time is showed.
